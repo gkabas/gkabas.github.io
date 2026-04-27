@@ -1,0 +1,2 @@
+/files/*
+  Access-Control-Allow-Origin: *

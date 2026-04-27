@@ -1,0 +1,762 @@
+ /*.your-custom-class-01 { */
+ /*  display: inline; */
+ /*} */
+ /* For CV icon */
+.icon {
+  background: url('https://gazikabas.netlify.app/nasa-images/CV.png');
+  padding: 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-size: 100%;
+  border: none;
+  /* Other styles here */
+}
+
+.intro,
+.library-desc,
+.cv-download-wrap,
+.email-contact-wrap,
+.nav-contact-links,
+.profile-icons,
+.patterns {
+  text-align: center;
+}
+
+.intro-and-nav {
+  height: 100vh;
+  height: 100svh;
+}
+
+.cv-download-wrap,
+.email-contact-wrap {
+  margin: clamp(0.7rem, 1.2vh, 1.5rem) 0 clamp(0.4rem, 0.75vh, 0.75rem);
+}
+
+.nav-contact-links-wrapper {
+  margin-top: auto;
+  padding-bottom: max(0.25rem, env(safe-area-inset-bottom));
+}
+
+.patterns,
+#patterns-list,
+.pattern,
+.pattern a {
+  background: var(--sidebar-bg);
+}
+
+
+.nav-contact-links {
+  margin-top: clamp(0.5rem, 1vh, 1.25rem);
+}
+
+.email-contact-wrap {
+  margin: 0 0 clamp(0.35rem, 0.8vh, 0.85rem);
+}
+
+.profile-action-button {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.1rem;
+  justify-content: center;
+  padding: clamp(0.15rem, 0.35vh, 0.2rem) clamp(0.35rem, 0.6vw, 0.45rem);
+  text-decoration: none;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.cv-download-button {
+  background: #001F3F;
+  border-color: #001F3F;
+  color: #fff;
+  font-size: clamp(0.62rem, 0.63rem + 0.08vw, 0.72rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.email-contact-button {
+  background: #ebe4d3;
+  border-color: #ebe4d3;
+  color: #111;
+  font-size: clamp(0.5rem, 0.5rem + 0.08vw, 0.58rem);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.cv-download-button:hover {
+  color: #fff;
+  background-color: #4C0000;
+  opacity: 1;
+}
+.email-contact-button:hover {
+  background: #001F3F;
+  border-color: #001F3F;
+  color: #fff;
+  opacity: 1;
+}
+.profile-action-button .fa,
+.profile-icons .fa,
+.profile-icons .ai {
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+  width: auto;
+}
+
+.profile-action-button .fa {
+  display: block;
+  font-size: clamp(0.72rem, 0.76rem + 0.1vw, 0.85rem);
+  line-height: 1;
+}
+
+.profile-icons {
+  display: flex;
+  gap: clamp(0.2rem, 0.4vw, 0.4rem);
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icons a {
+  color: #111;
+  text-decoration: none;
+  font-size: clamp(0.95rem, 0.95rem + 0.28vw, 1.15rem);
+}
+
+.profile-icons .fa-linkedin,
+.profile-icons .fa-university,
+.profile-icons .fa-camera,
+.profile-icons .fa-x-twitter,
+.profile-icons .ai-google-scholar {
+  background: transparent;
+  border-radius: 0;
+}
+
+.pattern a {
+  align-items: center;
+  gap: 0.1em;
+  justify-content: center;
+  width: 100%;
+  background: var(--sidebar-bg);
+  text-align: center;
+  padding-top: clamp(0.35rem, 0.52vh, 0.5rem);
+  padding-bottom: clamp(0.35rem, 0.52vh, 0.5rem);
+}
+
+.nav-menu-icon {
+  display: block;
+  width: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
+  min-width: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
+  height: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
+  margin-right: 0.55rem;
+  margin-right: 0;
+  color: #4a4a4a;
+}
+
+@media screen and (max-height: 880px), screen and (max-width: 1366px) {
+  .intro-and-nav > div {
+    padding-top: 2.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .library-desc {
+    margin-top: 0.25rem;
+  }
+
+  .patterns {
+    margin-top: 0.85rem;
+  }
+
+  .pattern {
+    font-size: 0.95rem;
+  }
+}
+
+
+.pattern [aria-current] {
+  clip-path: none;
+  background: var(--sidebar-bg);
+  border-left: none;
+  border-bottom: 0.2rem solid #0b45d8;
+  color: #111;
+}
+
+.pattern [aria-current] .nav-menu-icon {
+  color: #0b45d8;
+}
+
+ /* Style all font awesome icons */
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.ai {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-size: 100%;
+}
+
+/* Add a hover effect if you want */
+.ai:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-x-twitter {
+  background: white;
+  color: #111;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-camera {
+  background: white;
+  color: #111;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-linkedin {
+  background: white;
+  color: #007bb5;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-solid {
+  background: #007bb5;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-envelope {
+  background: white;
+  color: #007bb5;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-download {
+  background: #007bb5;
+  color: white;
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+  border: none;
+  background-size: 100%;
+}
+
+.fa-file-pdf {
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+  border: none;
+}
+
+.ai-file-pdf {
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+}
+
+.ai-cv-square {
+  background: white;
+  color: #3B5998;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+}
+
+.ai-ssrn {
+  background: #3B5998;
+  color: white;
+  padding: 1px;
+  font-size: 25px;
+  width: 40px;
+}
+
+#accordion{
+    width: 700px;
+    white-space: nowrap;
+}
+
+p {
+  margin-top: 1em ;
+  margin-bottom: 0em ;
+  padding: 0em;
+  line-height: 1.5em;
+} 
+
+br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 0.25em; /* change this to whatever height you want it */
+  margin-bottom: 0em ;
+  padding: 0em;
+  line-height: 1.5em;
+}
+
+hr {
+  max-width: 52em;
+}
+
+h1  {
+   padding: 0px;
+   margin: 0px;
+}
+h2  {
+   padding: 0px;
+  margin: 0px;
+
+}
+h3  {
+   padding: 0px;
+  margin: 0px;
+}
+h4  {
+   padding: 0px;
+  margin: 0px;
+}
+
+h5  {
+   padding: 0px;
+  margin: 0px;
+}
+
+h6  {
+   padding: 0px;
+  margin: 0px;
+}
+
+
+details {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 2px 6px;
+  /*background-color: #ddd;*/
+  border: none;
+  /*box-shadow: 3px 3px 4px black;*/
+}
+
+details > summary {
+  display: block;
+  cursor: pointer;
+}
+
+details>summary::before { 
+  content: '▷'; 
+ } 
+
+details[open]>summary::before { 
+  content: '▽';
+}
+
+.contents {
+  display: flex;
+  margin-top: 1em;
+  gap: 1em;
+}
+
+.content {
+  display: none; /*hidden by default*/
+  min-height: 50px;
+}
+
+details[data-for="first"][open] ~ .contents #first,
+details[data-for="second"][open] ~ .contents #second {
+  display: block;
+}
+
+.after-content {
+  margin-top: 1em;
+}
+
+#fig1 {
+  max-width: calc(1200px - 15rem);
+  padding: 10px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+ display: none;
+}
+
+ /* details > summary::-webkit-details-marker {  */
+ /*   display: contents; */
+ /* } */
+
+#abs1, #abs2, #abs3, #abs4, #abs5, #abs6, #abs7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: calc(1200px - 15rem);
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+#pres1, #pres2, #pres3, #pres4, #pres5, #pres6, #pres7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.85rem;
+  max-width: calc(1200px - 15rem);
+  padding: 10px 10px;
+  text-align: left;
+  background-color: #white;
+  margin-top: 10px;
+  display: none;
+  border: 1px dashed gray;
+}
+
+
+#pdf1, #pdf2, #pdf3, #pdf4, #pdf5, #pdf6, #pdf7 {
+  max-width: calc(1200px - 15rem);
+  margin-top: 10px;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border: 1px dashed gray;
+  overflow: hidden; /* Hide any overflow */
+  text-align: center; /* Center align content */
+  position: relative; /* Set relative positioning for child elements */
+}
+
+#pdf1 canvas, #pdf2 canvas, #pdf3 canvas, #pdf4 canvas, #pdf5 canvas, #pdf6 canvas, #pdf7 canvas {
+  max-width: 100%; /* Ensure canvas fits within the container */
+  height: auto;     /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center align canvas */
+}
+
+#pdf-navigation1, #pdf-navigation2, #pdf-navigation3, #pdf-navigation4, #pdf-navigation5, #pdf-navigation6, #pdf-navigation7 {
+  position: relative; /* Position navigation buttons absolutely within #pdf */
+  bottom: -5px; /* Adjust this value to control vertical placement */
+  left: min(600px - 7.5rem, 50%);; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+  display: flex;
+  justify-content: center; /* Center align buttons horizontally */
+  align-items: center;
+  margin-top: 5px; /* Space between canvas and buttons */
+  background: transparent;
+  z-index: 1;
+}
+
+#pdf-navigation1 button, #pdf-navigation2 button, #pdf-navigation3 button, #pdf-navigation4 button, #pdf-navigation5 button, #pdf-navigation6 button, #pdf-navigation7 button {
+  margin: 0 10px; /* Add spacing between the buttons */
+  font-size: 1rem;
+  border-radius: 0.03em;
+  font-family: inherit;
+  background: var(--page-bg, #f4efe2);
+  color: #000000;
+  padding: 0.05rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border: 1px dashed gray;
+  border-color: #001F3F;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#pdf-navigation1 button:hover, #pdf-navigation2 button:hover, #pdf-navigation3 button:hover, #pdf-navigation4 button:hover, #pdf-navigation5 button:hover, #pdf-navigation6 button:hover, #pdf-navigation7 button:hover  {
+  color: #fff;
+  background-color: #001F3F;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-family: inherit;
+    background: var(--page-bg, #f4efe2);
+    color: #000000;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #001F3F;
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #001F3F;
+}
+
+.button-ssrn {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: #3B5998;
+    font-family: inherit;
+    background: var(--page-bg, #f4efe2);
+    color: #3B5998;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #3B5998;
+}
+
+.button-ssrn {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.button-ssrn:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
+
+.button-pdf {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-color: #3B5998;
+    font-family: inherit;
+    background: var(--page-bg, #f4efe2);
+    color: #4C0000;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed gray;
+    border-color: #4C0000;
+}
+
+.button-pdf {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.button-pdf:hover {
+    color: #fff;
+    background-color: #4C0000;
+}
+
+.hide-on-small-screen {
+    font-size: 1rem;
+    border-radius: 0.03em;
+    font-family: inherit;
+    background: var(--page-bg, #f4efe2);
+    color: #38471f;
+    padding: 0.05rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px dashed #38471f;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+/* Hover effect for the button */
+.hide-on-small-screen:hover {
+    color: #fff;
+    background-color: #38471f;
+}
+
+@media (max-width: 500px) {
+  .hide-on-small-screen {
+    display: none !important; /* Ensures styles are applied */
+  }
+}
+
+
+.mySlides {
+ display: none
+}
+
+img {
+ vertical-align: middle;
+ width: 80%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -1.5em;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: -1.5em;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text2 {
+  color: #000000;
+  font-size: 1em;
+  padding: 8px 8px;
+  position: absolute;
+  bottom: -4em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 0.5em;
+  padding: 1px 1px;
+  position: absolute;
+  top: 0.2em;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.5em;
+  width: 0.5em;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  bottom: 0em;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.nav-contact-links-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#patterns-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 45em) {
+ .intro-and-nav {
+    height: auto;
+    min-height: 0;
+  }
+
+  .intro-and-nav > div {
+    height: auto;
+  }
+
+  .patterns {
+    flex: 0 0 auto;
+  }
+
+  .nav-contact-links-wrapper {
+    margin-top: 0.5rem;
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+
+  .cv-download-wrap,
+  .email-contact-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  .cv-download-wrap,
+  .email-contact-wrap,
+  .nav-contact-links,
+  .profile-icons,
+  .patterns {
+    text-align: center;
+  }
+
+  .cv-download-wrap,
+  .email-contact-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-icons {
+    justify-content: center;
+  }
+
+  .pattern a {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pattern [aria-current] {
+    padding-left: 1rem;
+    border-left: none;
+    border-bottom: 0.2rem solid #0b45d8;
+  }
+}

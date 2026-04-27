@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  {{ partial "head.html" . }}
+  <head>
+  {{ if .Site.Params.GoogleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+  {{ end }}
+  ...
+ </head>  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZFK8MR8DT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DZFK8MR8DT');
+</script>
+  <body>
+    <a href="#main">{{ T "skip_to_content" }}</a>
+    {{ partial "noscript.html" . }}
+    {{ partial "svg.html" . }}
+    <div class="wrapper">
+      {{ partial "header.html" . }}
+      <div class="main-and-footer">
+        <div>
+          {{ block "main" . }}{{ end }}
+          {{ if ne .Site.Params.moveFooterToHeader true }}
+            {{ partial "footer.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ partial "script.html" . }}
+    {{ partial "katex.html" . }}
+    {{ partial "google-analytics-async.html" . }}
+    <!-- Default Statcounter code for Personal Webpage
+https://gkabas.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=12439773; 
+var sc_invisible=1; 
+var sc_security="d6a36a0f"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12439773/0/d6a36a0f/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+  </body>
+</html>
