@@ -1,5 +1,5 @@
 ### Files 
-<u>[ZEW](https://gkabas.netlify.app/files/ZEW.pdf)</u> <br>
+<u>[ZEW](/files/ZEW.pdf)</u> <br>
 
 
 <script type="module">
