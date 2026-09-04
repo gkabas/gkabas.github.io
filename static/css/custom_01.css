@@ -86,14 +86,14 @@
 }
 
 .cv-download-button:hover {
-  color: var(--text-color, #121212);
-  background-color: #E9ECEF;
+  color: #fff;
+  background-color: #4C0000;
   opacity: 1;
 }
 .email-contact-button:hover {
-  background: #E9ECEF;
-  border-color: var(--text-color, #121212);
-  color: var(--text-color, #121212);
+  background: #001F3F;
+  border-color: #001F3F;
+  color: #fff;
   opacity: 1;
 }
 .profile-action-button .fa,
@@ -485,8 +485,8 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #pdf-navigation1 button:hover, #pdf-navigation2 button:hover, #pdf-navigation3 button:hover, #pdf-navigation4 button:hover, #pdf-navigation5 button:hover, #pdf-navigation6 button:hover, #pdf-navigation7 button:hover  {
-  color: var(--text-color, #121212);
-  background-color: #E9ECEF;
+  color: #fff;
+  background-color: #001F3F;
 }
 
 button {
@@ -509,8 +509,8 @@ button{
 }
 
 button:hover {
-    color: var(--text-color, #121212);
-    background-color: #E9ECEF;
+    color: #fff;
+    background-color: #001F3F;
 }
 
 .button-ssrn {
@@ -534,8 +534,8 @@ button:hover {
 }
 
 .button-ssrn:hover {
-    color: var(--text-color, #121212);
-    background-color: #E9ECEF;
+    color: #fff;
+    background-color: #3B5998;
 }
 
 .button-pdf {
@@ -559,8 +559,8 @@ button:hover {
 }
 
 .button-pdf:hover {
-    color: var(--text-color, #121212);
-    background-color: #E9ECEF;
+    color: #fff;
+    background-color: #4C0000;
 }
 
 .hide-on-small-screen {
@@ -580,8 +580,8 @@ button:hover {
 
 /* Hover effect for the button */
 .hide-on-small-screen:hover {
-    color: var(--text-color, #121212);
-    background-color: #E9ECEF;
+    color: #fff;
+    background-color: #38471f;
 }
 
 @media (max-width: 500px) {
@@ -637,7 +637,7 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(18,18,18,0.08);
+  background-color: rgba(18,18,18,0.8);
 }
 
 /* Caption text */
