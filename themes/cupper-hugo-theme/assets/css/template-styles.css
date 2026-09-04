@@ -16,15 +16,16 @@
     box-sizing: border-box;
 }
 :root {
-    --page-bg: #f4efe2;
-    --sidebar-bg: #ebe4d3;
+    --page-bg: #F8F9FA;
+    --sidebar-bg: #F8F9FA;
+    --text-color: #121212;
 }
 html {
     font-size: calc(1em + 0.33vw);
     font-family: "Times New Roman", Times, serif;
     line-height: 1.2;
-    color: #111;
-        background-color: var(--page-bg);
+    color: var(--text-color);
+    background-color: var(--page-bg);
 }
 body {
     background-color: var(--page-bg);
@@ -116,7 +117,7 @@ div:not([tabindex]):focus {
     width: 100%;
     padding: 0.75rem;
     color: #fefefe;
-    background: #000;
+    background: var(--text-color);
     position: absolute;
     top: -3rem;
     text-align: center;
@@ -133,29 +134,29 @@ h2,
 h3,
 h4 {
     font-family: "Times New Roman", Times, serif;
-    color:#000000;
+    color: var(--text-color);
     font-size: 1.7rem;
 }
 h1 {
     font-size: 1.7rem;
     font-family: "Times New Roman", Times, serif;
-    color:#000000;
+    color: var(--text-color);
 }
 h2 {
     font-size: 1.66rem;
     font-family: "Times New Roman", Times, serif;
-    color:#000000;
+    color: var(--text-color);
 }
 h3 {
     font-size: 1.25rem;
     font-family: "Times New Roman", Times, serif;
-    color:#000000;
+    color: var(--text-color);
 }
 h4,
 h5 {
     font-size: 1rem;
     font-family: "Times New Roman", Times, serif;
-    color:#000000;
+    color: var(--text-color);
 }
 h5 {
     font-size: 0.85rem;
@@ -167,7 +168,7 @@ kbd {
     padding: 0.1rem 0.33rem;
     border-radius: 0.25rem;
     border: 2px solid;
-    box-shadow: 0.125rem 0.125rem 0 #111;
+    box-shadow: 0.125rem 0.125rem 0 var(--text-color);
     vertical-align: 0.33em;
 }
 pre,
@@ -182,7 +183,7 @@ code {
 }
 .cmd {
     padding: 0.75rem;
-    background: #111;
+    background: var(--text-color);
 }
 .cmd code {
     color: #fefefe;
@@ -195,7 +196,7 @@ code {
 }
 .cmd code::selection{
     background: #fefefe;
-    color: rgba(0,0,0,.8);
+    color: rgba(18,18,18,.8);
 }
 /* Lists */
 main ul,
@@ -247,7 +248,7 @@ blockquote .author {
   border-radius: 0 !important;
   border-top-left-radius: 0.33rem !important;
   box-shadow: none !important;
-  background: #111 !important;
+  background: var(--text-color) !important;
   color: #fefefe !important;
   position: absolute !important;
   right: 0 !important;
@@ -260,7 +261,7 @@ label {
   font-weight: bold;
 }
 [for="themer"] {
-  background: #111;
+  background: var(--text-color);
   border-radius: 0.33em;
   color: #fefefe;
   padding: 0.25em 0.75em;
@@ -297,7 +298,7 @@ th:empty {
 /* Tested using... table */
 .tested {
     text-align: center;
-    border: 1px solid #111;
+    border: 1px solid var(--text-color);
 }
 .tested tr {
     display: flex;
@@ -307,13 +308,13 @@ th:empty {
     vertical-align: middle;
     overflow: hidden;
     flex: 1 0 auto;
-    border: 1px solid #111;
+    border: 1px solid var(--text-color);
 }
 .tested th {
     width: 100%;
-    background-color: #111;
+    background-color: var(--text-color);
     color: #fefefe;
-    outline-color: #111;
+    outline-color: var(--text-color);
 }
 .tested img {
     max-width: 3rem;
@@ -440,7 +441,7 @@ caption {
 .pattern [aria-current] {
   background-color: transparent;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-  color: #111;
+  color: var(--text-color);
 }
 
 /* Menu button */
@@ -629,7 +630,7 @@ pre[class*=language-] code * {
     content: counter(annotation);
     font-weight: bold;
     font-size: 0.5rem;
-    background: #111;
+    background: var(--text-color);
     color: #fefefe;
     border-radius: 1rem;
     margin-left: 0.25rem;
@@ -706,7 +707,7 @@ pre[class*=language-] code * {
 }
 [data-expands] {
     text-align: left;
-    color: #111;
+    color: var(--text-color);
     border: 0;
     background: none;
     width: 100%;
@@ -812,7 +813,7 @@ h1 svg {
 }
 .colors span {
     line-height: 1;
-    background-color: #111;
+    background-color: var(--text-color);
     color: #fefefe;
     font-size: 0.75rem;
     padding: 0.25rem;
@@ -1017,7 +1018,7 @@ h1 svg {
     }
     .cmd code {
         background: #fefefe;
-        color: #111;
+        color: var(--text-color);
     }
     pre code {
         white-space: pre-wrap !important;
@@ -1061,12 +1062,12 @@ h1 svg {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    background: rgba(0,0,0,.8);
+    background: rgba(18,18,18,.8);
     color: #fefefe;
 }
   
 ::selection {
-  background: rgba(0,0,0,.8);
+  background: rgba(18,18,18,.8);
   color: #fefefe;
 }
 
@@ -1111,6 +1112,4 @@ details[data-for="second"][open] ~ .contents #second {
 .after-content {
   margin-top: 1em;
 }
-
-
 

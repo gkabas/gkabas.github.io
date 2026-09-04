@@ -68,32 +68,32 @@
 }
 
 .cv-download-button {
-  background: #001F3F;
-  border-color: #001F3F;
-  color: #fff;
+  background: var(--page-bg, #F8F9FA);
+  border-color: var(--text-color, #121212);
+  color: var(--text-color, #121212);
   font-size: clamp(0.62rem, 0.63rem + 0.08vw, 0.72rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .email-contact-button {
-  background: #ebe4d3;
-  border-color: #ebe4d3;
-  color: #111;
+  background: var(--sidebar-bg, #F8F9FA);
+  border-color: var(--text-color, #121212);
+  color: var(--text-color, #121212);
   font-size: clamp(0.5rem, 0.5rem + 0.08vw, 0.58rem);
   letter-spacing: 0;
   text-transform: none;
 }
 
 .cv-download-button:hover {
-  color: #fff;
-  background-color: #4C0000;
+  color: var(--text-color, #121212);
+  background-color: #E9ECEF;
   opacity: 1;
 }
 .email-contact-button:hover {
-  background: #001F3F;
-  border-color: #001F3F;
-  color: #fff;
+  background: #E9ECEF;
+  border-color: var(--text-color, #121212);
+  color: var(--text-color, #121212);
   opacity: 1;
 }
 .profile-action-button .fa,
@@ -120,7 +120,7 @@
 }
 
 .profile-icons a {
-  color: #111;
+  color: var(--text-color, #121212);
   text-decoration: none;
   font-size: clamp(0.95rem, 0.95rem + 0.28vw, 1.15rem);
 }
@@ -152,7 +152,7 @@
   height: clamp(0.85rem, 0.85rem + 0.15vw, 1rem);
   margin-right: 0.55rem;
   margin-right: 0;
-  color: #4a4a4a;
+  color: var(--text-color, #121212);
 }
 
 @media screen and (max-height: 880px), screen and (max-width: 1366px) {
@@ -180,11 +180,11 @@
   background: var(--sidebar-bg);
   border-left: none;
   border-bottom: 0.2rem solid #0b45d8;
-  color: #111;
+  color: var(--text-color, #121212);
 }
 
 .pattern [aria-current] .nav-menu-icon {
-  color: #0b45d8;
+  color: var(--text-color, #121212);
 }
 
  /* Style all font awesome icons */
@@ -227,15 +227,15 @@
 }
 
 .fa-x-twitter {
-  background: white;
-  color: #111;
+  background: var(--page-bg, #F8F9FA);
+  color: var(--text-color, #121212);
   border: none;
   background-size: 100%;
 }
 
 .fa-camera {
-  background: white;
-  color: #111;
+  background: var(--page-bg, #F8F9FA);
+  color: var(--text-color, #121212);
   border: none;
   background-size: 100%;
 }
@@ -403,7 +403,7 @@ details[data-for="second"][open] ~ .contents #second {
   max-width: calc(1200px - 15rem);
   padding: 10px 0;
   text-align: left;
-  background-color: white;
+  background-color: var(--page-bg, #F8F9FA);
   margin-top: 10px;
  display: none;
 }
@@ -418,7 +418,7 @@ details[data-for="second"][open] ~ .contents #second {
   max-width: calc(1200px - 15rem);
   padding: 10px 10px;
   text-align: left;
-  background-color: #white;
+  background-color: var(--page-bg, #F8F9FA);
   margin-top: 10px;
   display: none;
   border: 1px dashed gray;
@@ -430,7 +430,7 @@ details[data-for="second"][open] ~ .contents #second {
   max-width: calc(1200px - 15rem);
   padding: 10px 10px;
   text-align: left;
-  background-color: #white;
+  background-color: var(--page-bg, #F8F9FA);
   margin-top: 10px;
   display: none;
   border: 1px dashed gray;
@@ -473,8 +473,8 @@ details[data-for="second"][open] ~ .contents #second {
   font-size: 1rem;
   border-radius: 0.03em;
   font-family: inherit;
-  background: var(--page-bg, #f4efe2);
-  color: #000000;
+  background: var(--page-bg, #F8F9FA);
+  color: var(--text-color, #121212);
   padding: 0.05rem;
   padding-left: 0.1rem;
   padding-right: 0.1rem;
@@ -485,16 +485,16 @@ details[data-for="second"][open] ~ .contents #second {
 }
 
 #pdf-navigation1 button:hover, #pdf-navigation2 button:hover, #pdf-navigation3 button:hover, #pdf-navigation4 button:hover, #pdf-navigation5 button:hover, #pdf-navigation6 button:hover, #pdf-navigation7 button:hover  {
-  color: #fff;
-  background-color: #001F3F;
+  color: var(--text-color, #121212);
+  background-color: #E9ECEF;
 }
 
 button {
     font-size: 1rem;
     border-radius: 0.03em;
     font-family: inherit;
-    background: var(--page-bg, #f4efe2);
-    color: #000000;
+    background: var(--page-bg, #F8F9FA);
+    color: var(--text-color, #121212);
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
@@ -509,17 +509,17 @@ button{
 }
 
 button:hover {
-    color: #fff;
-    background-color: #001F3F;
+    color: var(--text-color, #121212);
+    background-color: #E9ECEF;
 }
 
 .button-ssrn {
     font-size: 1rem;
     border-radius: 0.03em;
-    font-color: #3B5998;
+    font-color: var(--text-color, #121212);
     font-family: inherit;
-    background: var(--page-bg, #f4efe2);
-    color: #3B5998;
+    background: var(--page-bg, #F8F9FA);
+    color: var(--text-color, #121212);
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
@@ -534,17 +534,17 @@ button:hover {
 }
 
 .button-ssrn:hover {
-    color: #fff;
-    background-color: #3B5998;
+    color: var(--text-color, #121212);
+    background-color: #E9ECEF;
 }
 
 .button-pdf {
     font-size: 1rem;
     border-radius: 0.03em;
-    font-color: #3B5998;
+    font-color: var(--text-color, #121212);
     font-family: inherit;
-    background: var(--page-bg, #f4efe2);
-    color: #4C0000;
+    background: var(--page-bg, #F8F9FA);
+    color: var(--text-color, #121212);
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
@@ -559,16 +559,16 @@ button:hover {
 }
 
 .button-pdf:hover {
-    color: #fff;
-    background-color: #4C0000;
+    color: var(--text-color, #121212);
+    background-color: #E9ECEF;
 }
 
 .hide-on-small-screen {
     font-size: 1rem;
     border-radius: 0.03em;
     font-family: inherit;
-    background: var(--page-bg, #f4efe2);
-    color: #38471f;
+    background: var(--page-bg, #F8F9FA);
+    color: var(--text-color, #121212);
     padding: 0.05rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
@@ -580,8 +580,8 @@ button:hover {
 
 /* Hover effect for the button */
 .hide-on-small-screen:hover {
-    color: #fff;
-    background-color: #38471f;
+    color: var(--text-color, #121212);
+    background-color: #E9ECEF;
 }
 
 @media (max-width: 500px) {
@@ -615,7 +615,7 @@ img {
   width: auto;
   padding: 8px;
   margin-top: -22px;
-  color: grey;
+  color: var(--text-color, #121212);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -637,12 +637,12 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(18,18,18,0.08);
 }
 
 /* Caption text */
 .text2 {
-  color: #000000;
+  color: var(--text-color, #121212);
   font-size: 1em;
   padding: 8px 8px;
   position: absolute;
@@ -653,7 +653,7 @@ img {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #000000;
+  color: var(--text-color, #121212);
   font-size: 0.5em;
   padding: 1px 1px;
   position: absolute;
