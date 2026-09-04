@@ -68,9 +68,9 @@
 }
 
 .cv-download-button {
-  background: var(--page-bg, #F8F9FA);
-  border-color: var(--text-color, #121212);
-  color: var(--text-color, #121212);
+  background: #4C0000;
+  border-color: #4C0000;
+  color: #fff;
   font-size: clamp(0.62rem, 0.63rem + 0.08vw, 0.72rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -86,8 +86,9 @@
 }
 
 .cv-download-button:hover {
-  color: #fff;
-  background-color: #4C0000;
+  color: var(--text-color, #121212);
+  background-color: var(--page-bg, #F8F9FA);
+  border-color: var(--text-color, #121212);
   opacity: 1;
 }
 .email-contact-button:hover {
@@ -114,7 +115,7 @@
 
 .profile-icons {
   display: flex;
-  gap: clamp(0.2rem, 0.4vw, 0.4rem);
+  gap: clamp(0.55rem, 0.9vw, 0.8rem);
   align-items: center;
   justify-content: center;
 }
