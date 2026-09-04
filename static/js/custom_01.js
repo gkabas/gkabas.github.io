@@ -5,6 +5,37 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
+// Reveal the email address on the first click and open the visitor's default
+// email app on the second click.
+function initializeEmailReveal() {
+    const emailButton = document.querySelector("[data-email-reveal]");
+
+    if (!emailButton) {
+        return;
+    }
+
+    const emailLabel = emailButton.querySelector("[data-email-label]");
+    const emailAddress = `${emailButton.dataset.emailUser}@${emailButton.dataset.emailDomain}`;
+    let isRevealed = false;
+
+    emailButton.addEventListener("click", () => {
+        if (!isRevealed) {
+            isRevealed = true;
+            emailLabel.textContent = emailAddress;
+            emailButton.setAttribute(
+                "aria-label",
+                `${emailAddress}. Click again to compose an email.`
+            );
+            emailButton.title = "Click again to compose an email";
+            return;
+        }
+
+        window.location.href = `mailto:${emailAddress}`;
+    });
+}
+
+initializeEmailReveal();
+
 // --- PDF Data Map for Staged Loading (Extensible up to 25 papers) ---
 // IMPORTANT: Extend this map when you add papers 8 through 25.
 const pdfUrlMap = [
