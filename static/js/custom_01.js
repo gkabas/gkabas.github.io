@@ -5,32 +5,37 @@ const yourCustomFunction01 = (message) => {
   console.log(message);
 };
 
-// Reveal the email address on the first click and open the visitor's default
-// email app on the second click.
+// Reveal the email address on the first click, then replace the button with a
+// native mailto link so the second click opens the visitor's default email app.
 function initializeEmailReveal() {
-    const emailButton = document.querySelector("[data-email-reveal]");
+    const emailButtons = document.querySelectorAll("[data-email-reveal]");
 
-    if (!emailButton) {
-        return;
-    }
+    emailButtons.forEach((emailButton) => {
+        const emailLabel = emailButton.querySelector("[data-email-label]");
+        const emailUser = emailButton.dataset.emailUser;
+        const emailDomain = emailButton.dataset.emailDomain;
 
-    const emailLabel = emailButton.querySelector("[data-email-label]");
-    const emailAddress = `${emailButton.dataset.emailUser}@${emailButton.dataset.emailDomain}`;
-    let isRevealed = false;
-
-    emailButton.addEventListener("click", () => {
-        if (!isRevealed) {
-            isRevealed = true;
-            emailLabel.textContent = emailAddress;
-            emailButton.setAttribute(
-                "aria-label",
-                `${emailAddress}. Click again to compose an email.`
-            );
-            emailButton.title = "Click again to compose an email";
+        if (!emailLabel || !emailUser || !emailDomain) {
             return;
         }
 
-        window.location.href = `mailto:${emailAddress}`;
+        emailButton.addEventListener("click", () => {
+            const emailAddress = `${emailUser}@${emailDomain}`;
+            const emailLink = document.createElement("a");
+
+            emailLabel.textContent = emailAddress;
+            emailLink.className = emailButton.className;
+            emailLink.href = `mailto:${emailAddress}`;
+            emailLink.setAttribute("aria-label", `Compose an email to ${emailAddress}`);
+            emailLink.title = "Click to compose an email";
+
+            while (emailButton.firstChild) {
+                emailLink.appendChild(emailButton.firstChild);
+            }
+
+            emailButton.parentNode.replaceChild(emailLink, emailButton);
+            emailLink.focus();
+        }, { once: true });
     });
 }
 

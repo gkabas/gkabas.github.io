@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="{{ $searchCss.RelPermalink }}"></link>
 {{ end }}
 
+{{ $customJsVersion := now.Unix }}
 {{ range .Site.Params.customJs }}
-  <script src="{{ . | relURL }}"></script>
+  <script src="{{ . | relURL }}?v={{ $customJsVersion }}"></script>
 {{ end }}
