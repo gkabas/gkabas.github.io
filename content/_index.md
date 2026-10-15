@@ -44,14 +44,14 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
   <button onclick="nextSlide2()">Next ❯</button>
 </div>
 
- ## Publications
-
 <div class="clear"></div>
 <br><br />
 <hr class="solid">
  
+ ## Publications
+ 
  **Domestic Climate Policy and Cross-Border Lending**<br> 
-with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, forth. <i>Management Science</i>  
+with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, <i>Management Science</i>, forthcoming  
 
 <button id="main-results-fig1" onclick="abs1()">Abstract</button> <button id="main-results-res1" onclick="showPDFWithSlides1()">Main Results</button> <button id="main-results-pres1" onclick="pres1()">Presentations</button> <button class="button-pdf" onclick="pdf1()">PDF</button> <button class="button-ssrn" onclick="ssrn1()">SSRN</button> <button class="hide-on-small-screen" onclick="published4()">Published Version</button>
 
