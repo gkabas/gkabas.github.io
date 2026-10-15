@@ -186,7 +186,7 @@ function ssrn4() {
     }
 
 function published4() {
-    window.open("https://doi.org/10.1017/S0022109023001011", "_blank");
+    window.open("https://pubsonline.informs.org/doi/10.1287/mnsc.2025.03376", "_blank");
     }
 
 
