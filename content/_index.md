@@ -45,6 +45,11 @@ ABFER, Bayes Business School, BI Norwegian Business School, CBID Central Banker'
 </div>
 
  ## Publications
+
+<div class="clear"></div>
+<br><br />
+<hr class="solid">
+ 
  **Domestic Climate Policy and Cross-Border Lending**<br> 
 with <u>[Emanuela Benincasa](https://emanuelabenincasa.wordpress.com/)</u> and <u>[Steven Ongena](https://sites.google.com/site/stevenongena/)</u>, forth. <i>Management Science</i>  
 
@@ -64,10 +69,6 @@ Banca d'Italia Workshop on Climate Risks, BOFIT Workshop, CAFRAL, Croatian Centr
   <button onclick="prevSlide1()">❮ Previous</button>
   <button onclick="nextSlide1()">Next ❯</button>
 </div>
-
-<div class="clear"></div>
-<br><br />
-<hr class="solid">
 
 **Unintended Consequences of Unemployment Insurance Benefits: The Role of Banks**<br>
 with <u>[Yavuz Arslan](https://yavuzarslan.org/)</u> and <u>[Ahmet Degerli](https://sites.google.com/view/ahmetdegerli/home)</u>, <i>Management Science</i>, 2025 
